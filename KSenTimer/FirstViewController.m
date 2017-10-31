@@ -83,10 +83,10 @@
 - (void)simulateBusy
 {
     NSLog(@"start simulate busy!");
-    NSUInteger caculateCount = 0x0FFFFFFF;
+    NSUInteger caculateCount = 0x3FFFFFFF;
     CGFloat uselessValue = 0;
     for (NSUInteger i = 0; i < caculateCount; ++i) {
-        uselessValue = i / 0.3333;
+        uselessValue = i / 0.2222;
     }
     NSLog(@"finish simulate busy!");
 }
