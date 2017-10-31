@@ -15,6 +15,10 @@
 		CFD9E0B61FA8225600053337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD9E0B41FA8225600053337 /* LaunchScreen.storyboard */; };
 		CFD9E0C11FA8225600053337 /* KSenTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E0C01FA8225600053337 /* KSenTimerTests.m */; };
 		CFD9E0CC1FA8225600053337 /* KSenTimerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E0CB1FA8225600053337 /* KSenTimerUITests.m */; };
+		CFD9E0DC1FA83F7D00053337 /* KSTestTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E0DB1FA83F7D00053337 /* KSTestTimer.m */; };
+		CFD9E0E31FA840A300053337 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E0E11FA840A300053337 /* FirstViewController.m */; };
+		CFD9E0E41FA840A300053337 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFD9E0E21FA840A300053337 /* FirstViewController.xib */; };
+		CFD9E0E71FA84C2000053337 /* KSTestSelf.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD9E0E61FA84C2000053337 /* KSTestSelf.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		CFD9E0C71FA8225600053337 /* KSenTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KSenTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD9E0CB1FA8225600053337 /* KSenTimerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSenTimerUITests.m; sourceTree = "<group>"; };
 		CFD9E0CD1FA8225600053337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD9E0DA1FA83F7D00053337 /* KSTestTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestTimer.h; sourceTree = "<group>"; };
+		CFD9E0DB1FA83F7D00053337 /* KSTestTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTestTimer.m; sourceTree = "<group>"; };
+		CFD9E0E01FA840A300053337 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		CFD9E0E11FA840A300053337 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		CFD9E0E21FA840A300053337 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		CFD9E0E51FA84C2000053337 /* KSTestSelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTestSelf.h; sourceTree = "<group>"; };
+		CFD9E0E61FA84C2000053337 /* KSTestSelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTestSelf.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,14 @@
 		CFD9E0A51FA8225600053337 /* KSenTimer */ = {
 			isa = PBXGroup;
 			children = (
+				CFD9E0D91FA83F5A00053337 /* KSTimerTest */,
 				CFD9E0A91FA8225600053337 /* AppDelegate.h */,
 				CFD9E0AA1FA8225600053337 /* AppDelegate.m */,
 				CFD9E0AC1FA8225600053337 /* ViewController.h */,
 				CFD9E0AD1FA8225600053337 /* ViewController.m */,
+				CFD9E0E01FA840A300053337 /* FirstViewController.h */,
+				CFD9E0E11FA840A300053337 /* FirstViewController.m */,
+				CFD9E0E21FA840A300053337 /* FirstViewController.xib */,
 				CFD9E0AF1FA8225600053337 /* Main.storyboard */,
 				CFD9E0B21FA8225600053337 /* Assets.xcassets */,
 				CFD9E0B41FA8225600053337 /* LaunchScreen.storyboard */,
@@ -138,6 +153,17 @@
 				CFD9E0CD1FA8225600053337 /* Info.plist */,
 			);
 			path = KSenTimerUITests;
+			sourceTree = "<group>";
+		};
+		CFD9E0D91FA83F5A00053337 /* KSTimerTest */ = {
+			isa = PBXGroup;
+			children = (
+				CFD9E0DA1FA83F7D00053337 /* KSTestTimer.h */,
+				CFD9E0DB1FA83F7D00053337 /* KSTestTimer.m */,
+				CFD9E0E51FA84C2000053337 /* KSTestSelf.h */,
+				CFD9E0E61FA84C2000053337 /* KSTestSelf.m */,
+			);
+			path = KSTimerTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +278,7 @@
 				CFD9E0B61FA8225600053337 /* LaunchScreen.storyboard in Resources */,
 				CFD9E0B31FA8225600053337 /* Assets.xcassets in Resources */,
 				CFD9E0B11FA8225600053337 /* Main.storyboard in Resources */,
+				CFD9E0E41FA840A300053337 /* FirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD9E0AE1FA8225600053337 /* ViewController.m in Sources */,
+				CFD9E0E71FA84C2000053337 /* KSTestSelf.m in Sources */,
 				CFD9E0AB1FA8225600053337 /* AppDelegate.m in Sources */,
+				CFD9E0E31FA840A300053337 /* FirstViewController.m in Sources */,
 				CFD9E0A81FA8225600053337 /* main.m in Sources */,
+				CFD9E0DC1FA83F7D00053337 /* KSTestTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

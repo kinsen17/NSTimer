@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
+            <connections>
+                <outlet property="delayBtn" destination="7dP-UC-e0H" id="qSu-u3-ULX"/>
+                <outlet property="noRepeatBtn" destination="aMP-Qx-0dy" id="eEK-ph-4qn"/>
+                <outlet property="repeatBtn" destination="mCP-KJ-cTu" id="zrE-SD-TSp"/>
+                <outlet property="testBtn" destination="rOI-zI-15v" id="kP1-ed-VEa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMP-Qx-0dy">
+                    <rect key="frame" x="50" y="94" width="80" height="40"/>
+                    <color key="backgroundColor" red="0.31287977430555558" green="0.59624565972222221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9KD-wc-Zqr"/>
+                        <constraint firstAttribute="height" constant="40" id="KDM-hl-Qow"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="不重复timer">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cilckNoRepeatBtn:" destination="-1" eventType="touchUpInside" id="laj-aJ-85m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-KJ-cTu">
+                    <rect key="frame" x="245" y="94" width="80" height="40"/>
+                    <color key="backgroundColor" red="0.36284722222222221" green="0.59624565972222221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="1XZ-bH-Ifz"/>
+                        <constraint firstAttribute="height" constant="40" id="DNw-Rz-GUZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="重复的timer">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRepeatBtn:" destination="-1" eventType="touchUpInside" id="LJe-g7-bYs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOI-zI-15v">
+                    <rect key="frame" x="50" y="164" width="80" height="40"/>
+                    <color key="backgroundColor" red="0.39982096354166669" green="0.59624565972222221" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="假象">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickTestBtn:" destination="-1" eventType="touchUpInside" id="Ksj-Qc-Mpu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dP-UC-e0H">
+                    <rect key="frame" x="245" y="164" width="99" height="40"/>
+                    <color key="backgroundColor" red="0.30745442709999998" green="0.59624565969999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="GBA-sP-bPH"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WNY-SD-O3v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="测试延迟时间规律">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDelayBtn:" destination="-1" eventType="touchUpInside" id="uv8-eU-Fi2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7dP-UC-e0H" firstAttribute="top" secondItem="rOI-zI-15v" secondAttribute="top" id="2Pp-mD-E0r"/>
+                <constraint firstItem="7dP-UC-e0H" firstAttribute="leading" secondItem="mCP-KJ-cTu" secondAttribute="leading" id="84z-K3-BB1"/>
+                <constraint firstAttribute="trailing" secondItem="mCP-KJ-cTu" secondAttribute="trailing" constant="50" id="CRB-Gp-Sdw"/>
+                <constraint firstItem="mCP-KJ-cTu" firstAttribute="height" secondItem="aMP-Qx-0dy" secondAttribute="height" id="O5l-Nx-wDa"/>
+                <constraint firstItem="mCP-KJ-cTu" firstAttribute="width" secondItem="aMP-Qx-0dy" secondAttribute="width" id="dVJ-vD-SFj"/>
+                <constraint firstItem="aMP-Qx-0dy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="f8j-a0-Kpb"/>
+                <constraint firstItem="mCP-KJ-cTu" firstAttribute="centerY" secondItem="aMP-Qx-0dy" secondAttribute="centerY" id="gCA-Q9-PN9"/>
+                <constraint firstItem="aMP-Qx-0dy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="hi1-1J-X9n"/>
+                <constraint firstItem="rOI-zI-15v" firstAttribute="width" secondItem="aMP-Qx-0dy" secondAttribute="width" id="izD-9l-QAh"/>
+                <constraint firstItem="rOI-zI-15v" firstAttribute="leading" secondItem="aMP-Qx-0dy" secondAttribute="leading" id="mvj-1l-lRR"/>
+                <constraint firstItem="rOI-zI-15v" firstAttribute="height" secondItem="aMP-Qx-0dy" secondAttribute="height" id="qYZ-5s-W8w"/>
+                <constraint firstItem="rOI-zI-15v" firstAttribute="top" secondItem="aMP-Qx-0dy" secondAttribute="bottom" constant="30" id="wFr-y4-GgM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
